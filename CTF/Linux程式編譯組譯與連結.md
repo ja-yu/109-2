@@ -134,3 +134,16 @@ C程式 ==> 組合語言 ==> 執行檔
  彙編 ===> gcc -c helloCTFer.s -o helloCTFer.o ===> 查看.o的架構
  連結 ===> gcc  helloCTFer.o -o helloCTFer  ===> 查看helloCTFer的架構
 ```
+```
+ls -al helloCTFer.*
+cat helloCTFer.i
+```
+# 組合語言有兩種格式
+### AT&T(有%)
+```
+Linux預設用AT&T
+```
+### intel
+```
+
+```
