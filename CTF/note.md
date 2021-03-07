@@ -14,8 +14,8 @@ gedit 檔名.c
 ### Unumtu 16.04 LTS(32 bits)
 ```
 (1)編譯
-   ==> gcc helloCTFer.c  ==>  產生a.out執行檔   
-   ==> gcc helloCTFer.c -o helloCTFer
+   ==> gcc helloCTFer.c  ==>  產生a.out執行檔   (沒有指定執行檔名，預設產生a.out)
+   ==> gcc helloCTFer.c -o helloCTFer          (-o 指定執行檔名)
    ==> gcc helloCTFer.c -o helloCTFer.exe
 
 (2)執行
@@ -28,7 +28,8 @@ gedit 檔名.c
     ==> file ./helloCTFer
     ==> file ./helloCTFer.exe
 ```
+### 查看原始碼與執行碼大小
 ```
-查看原始碼與執行碼大小
+ls
 ls -al 檔名.*
 ```
