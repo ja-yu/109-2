@@ -125,3 +125,11 @@ C程式 ==> 組合語言 ==> 執行檔
 執行檔載入標頭檔，所以比程式碼大
 .o檔還要載入其他相關的模組，跟函數庫綁在一起
 ```
+```
+編譯的各階段
+ 原始程式碼 ===>  helloCTFer.c
+ 預處理 ===> gcc –E helloCTFer.c –o helloCTFer.i    ===> 查看.i的架構
+ 編譯 ===> gcc –S helloCTFer.i  -o helloCTFer.s   ===> 查看.s的架構
+ 彙編 ===> gcc -c helloCTFer.s -o helloCTFer.o ===> 查看.o的架構
+ 連結 ===> gcc  helloCTFer.o -o helloCTFer  ===> 查看helloCTFer的架構
+```
