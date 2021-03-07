@@ -80,6 +80,9 @@ hexdump -C helloCTFer.exe
 ```
 ### 作業 找file magic
 ```
+exe改jpg
+hexdump -C helloCTFer.jpg
+
 圖片檔
 hexdump -C
 
