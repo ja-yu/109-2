@@ -51,5 +51,8 @@ strippe
 ```
 file helloCTFer.exe
 
+
+PE結構
 x86 代表32位元
+x86-64 代表64位元
 ```
