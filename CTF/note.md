@@ -50,4 +50,6 @@ strippe
 ### 在Window用Dev C++編譯出的執行檔
 ```
 file helloCTFer.exe
+
+x86 代表32位元
 ```
