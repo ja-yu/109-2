@@ -33,3 +33,8 @@ gedit 檔名.c
 ls
 ls -al 檔名.*
 ```
+```
+file helloCTFer.exe 
+
+helloCTFer.exe: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=4258888fd293dae24c8143c584f1514ddcc7db0e, not strippe
+```
