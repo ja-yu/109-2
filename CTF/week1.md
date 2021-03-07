@@ -92,3 +92,11 @@ hexdump -C
 mp4檔
 hexdump -C
 ```
+```
+用8進位dump
+
+```
+# Linux指令用法查詢
+```
+man 指令名
+```
