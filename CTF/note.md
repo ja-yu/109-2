@@ -33,13 +33,21 @@ gedit 檔名.c
 ls
 ls -al 檔名.*
 ```
-### 在Linux編譯出的執行檔
+### 在Linux32位元編譯出的執行檔
 ```
 file helloCTFer.exe 
 
 helloCTFer.exe: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=4258888fd293dae24c8143c584f1514ddcc7db0e, not strippe
 ```
+```
+ELF格式
+32位元的executable執行檔
+Intel語言
+
+strippe
+編譯程式時，會產生一堆資料，可以把那些都拿掉，讓執行檔變小一點
+```
 ### 在Window用Dev C++編譯出的執行檔
 ```
-
+file helloCTFer.exe
 ```
