@@ -116,3 +116,48 @@ hexdump -C picture.png
 00000070  00 42 32 49 44 41 54 78  da ed dd 77 9c 65 45 99  |.B2IDATx...w.eE.|
 00000080  ff f1 cf ed 09 4c 80 c9  33 30 79 86 30 20 30 43  |.....L..30y.0 0C|
 ```
+# 編譯的各階段
+
+### 預處理
+```
+gcc -E helloCTFer.c -o helloCTFer.i
+```
+```
+ls -al helloCTFer.*
+
+-rw-rw-r-- 1 ksu ksu    93  三  12 14:08 helloCTFer.c
+-rw-rw-r-- 1 ksu ksu 17543  三  12 15:05 helloCTFer.i
+```
+```
+cat helloCTFer.i
+
+# 1 "helloCTFer.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "helloCTFer.c"
+
+# 1 "/usr/include/stdio.h" 1 3 4
+# 27 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/features.h" 1 3 4
+# 367 "/usr/include/features.h" 3 4
+# 1 "/usr/include/i386-linux-gnu/sys/cdefs.h" 1 3 4
+# 410 "/usr/include/i386-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/i386-linux-gnu/bits/wordsize.h" 1 3 4
+# 411 "/usr/include/i386-linux-gnu/sys/cdefs.h" 2 3 4
+# 368 "/usr/include/features.h" 2 3 4
+# 391 "/usr/include/features.h" 3 4
+# 1 "/usr/include/i386-linux-gnu/gnu/stubs.h" 1 3 4
+
+.............
+# 3 "helloCTFer.c" 2
+
+
+# 4 "helloCTFer.c"
+int main()
+{
+   printf("Hello CTFer\n ");
+   return 0;
+}
+```
