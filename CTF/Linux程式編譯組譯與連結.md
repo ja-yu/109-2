@@ -11,7 +11,7 @@ nasm -h
 ```
 gedit 檔名.c
 ```
-### Unumtu 16.04 LTS(32 bits)
+### Ubuntu 16.04 LTS(32 bits)
 ```
 (1)編譯
    ==> gcc helloCTFer.c  ==>  產生a.out執行檔   (沒有指定執行檔名，預設產生a.out)
