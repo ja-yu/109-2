@@ -244,3 +244,16 @@ file helloCTFer.o
 
 helloCTFer.o: ELF 32-bit LSB relocatable, Intel 80386, version 1 (SYSV), not stripped
 ```
+### 連結
+```
+gcc  helloCTFer.o -o helloCTFer 
+```
+```
+ls -al helloCTFer*
+
+-rwxrwxr-x 1 ksu ksu  7356  三  12 15:27 helloCTFer
+-rw-rw-r-- 1 ksu ksu    93  三  12 14:08 helloCTFer.c
+-rw-rw-r-- 1 ksu ksu 17543  三  12 15:05 helloCTFer.i
+-rw-rw-r-- 1 ksu ksu  1080  三  12 15:21 helloCTFer.o
+-rw-rw-r-- 1 ksu ksu   664  三  12 15:12 helloCTFer.s
+```
