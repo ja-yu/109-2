@@ -20,3 +20,9 @@ file ./helloCTFer
 file ./helloCTFer.exe 
 ./helloCTFer.exe: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=13d33ba42c32245aa46436a2f22dfd4875c2fb45, not stripped
 ```
+# 在Windows用Dev C++編譯出的執行檔
+```
+file helloCTFer.exe 
+
+helloCTFer.exe: PE32+ executable (console) x86-64, for MS Windows
+```
