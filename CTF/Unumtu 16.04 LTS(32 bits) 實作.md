@@ -214,3 +214,33 @@ main:
 	.section	.note.GNU-stack,"",@progbits
 
 ```
+### 彙編
+```
+gcc -c helloCTFer.s -o helloCTFer.o
+```
+```
+ls -al helloCTFer.*
+
+-rw-rw-r-- 1 ksu ksu    93  三  12 14:08 helloCTFer.c
+-rw-rw-r-- 1 ksu ksu 17543  三  12 15:05 helloCTFer.i
+-rw-rw-r-- 1 ksu ksu  1080  三  12 15:21 helloCTFer.o
+-rw-rw-r-- 1 ksu ksu   664  三  12 15:12 helloCTFer.s
+```
+```
+hexdump -C helloCTFer.o
+
+00000000  7f 45 4c 46 01 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|
+00000010  01 00 03 00 01 00 00 00  00 00 00 00 00 00 00 00  |................|
+00000020  30 02 00 00 00 00 00 00  34 00 00 00 00 00 28 00  |0.......4.....(.|
+00000030  0d 00 0a 00 8d 4c 24 04  83 e4 f0 ff 71 fc 55 89  |.....L$.....q.U.|
+00000040  e5 51 83 ec 04 83 ec 0c  68 00 00 00 00 e8 fc ff  |.Q......h.......|
+00000050  ff ff 83 c4 10 b8 00 00  00 00 8b 4d fc c9 8d 61  |...........M...a|
+00000060  fc c3 48 65 6c 6c 6f 20  43 54 46 65 72 0a 20 00  |..Hello CTFer. .|
+00000070  00 47 43 43 3a 20 28 55  62 75 6e 74 75 20 35 2e  |.GCC: (Ubuntu 5.|
+00000080  34 2e 30 2d 36 75 62 75  6e 74 75 31 7e 31 36 2e  |4.0-6ubuntu1~16.|
+```
+```
+file helloCTFer.o
+
+helloCTFer.o: ELF 32-bit LSB relocatable, Intel 80386, version 1 (SYSV), not stripped
+```
