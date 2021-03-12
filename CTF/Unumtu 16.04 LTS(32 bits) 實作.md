@@ -175,7 +175,7 @@ ls -al helloCTFer.*
 ```
 cat helloCTFer.s
 
-.file	"helloCTFer.c"
+	.file	"helloCTFer.c"
 	.section	.rodata
 .LC0:
 	.string	"Hello CTFer\n "
