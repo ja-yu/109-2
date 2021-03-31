@@ -89,3 +89,7 @@ Commands:
 Run 'docker COMMAND --help' for more information on a command.
 
 ```
+```
+docker --version
+Docker version 19.03.0, build aeac9490dc
+```
