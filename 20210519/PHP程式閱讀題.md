@@ -35,3 +35,6 @@
 
 說明上述程式stripslashes()與addslashes()
 ```
+```
+
+```
