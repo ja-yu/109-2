@@ -59,7 +59,7 @@ PHP會區分變數名稱和常數名稱的英文字母大小寫
   註:請舉範例證明
 ```
 ```
-B、C
+B、C、D
 
 <?php 和 ?>
 <?php
@@ -74,22 +74,10 @@ Hello, world!
 ?>
 輸出:
 Hello, world!
-
 註:php.ini中short_open_tag=On
 
 <% 和 %>
-<%
-    echo("Hello, world!");
-%>
-輸出:
-<% echo("Hello, world!"); %>
-
-< 和 />
-<
-    echo("Hello, world!");
-/>
-輸出:
-< echo("Hello, world!"); />
+其實是用來標示ASP程式碼區塊，在過去為了鼓勵ASP網頁開發人員轉用PHP因而允許以<% 和 %>標示
 ```
 ### 第2章 型別、變數、常數與運算子 
 ```
